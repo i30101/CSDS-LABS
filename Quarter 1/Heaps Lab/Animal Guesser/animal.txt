@@ -1,0 +1,58 @@
+null
+Is it a mammal?
+Is it a bird?
+Is it feline?
+Is it a fish?
+Is it flightless?
+Is it a primate?
+Is it a common house pet?
+Is it an alligator?
+Is it a shark?
+Is it a hawk?
+Is it an emu?
+Is it a horse?
+Is it a gorilla?
+Is it a lion?
+Is it a house cat?
+Does it have 8 legs?
+null
+null
+null
+Is it pink and does it have long legs?
+null
+null
+null
+Does your animal have large udders?
+null
+null
+null
+Does it have spots across its fur?
+null
+null
+null
+null
+Is your animal a spider?
+null
+null
+null
+null
+null
+null
+null
+Is your animal a flamingo?
+null
+null
+null
+null
+null
+null
+null
+Is your animal a cow?
+null
+null
+null
+null
+null
+null
+null
+Is your animal a cheetah?

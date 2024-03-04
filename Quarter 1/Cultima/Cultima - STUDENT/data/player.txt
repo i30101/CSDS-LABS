@@ -1,0 +1,59 @@
+1839
+Rodan   **name
+-1 -1 -1     **mapMark
+0 0 0 0 0 0 0 0 0     **potions
+10 10 10 10 10     **flowerBoxCount
+1 432 257 63      **specificExperience
+741 5 9 8 5 5 61 38 18 6 64 426 107 12 339 1 1 214 26 0 0 11 4 1 7 0 50 1 1 1 5 0 11 5 0      **stats
+0 140 4 225 15 7 14 4 21 0 11 0 4 7 0      **infoIndexes
+0 6 9 0     **spellHotKeys
+-1 -1 -1 -1 -1 -1 -1 -1 -1     **potionHotKeys
+2 1 2 5 4 0 14 0     **weaponHotKeys
+[]     **effects
+[images/characters/player/staff1.Gif, images/characters/player/staff2.Gif, images/characters/player/staff3.Gif, images/characters/player/staff4.Gif]   **images
+[jade, mannastone, moonjem:2, seaserpent-scales, loaded-cube, songpage:1, lockpick:3]     **item:itemFrequency
+[Heal, Cure, Shiftwind, Knowing, Charm, Fear, Flight, Eagle-eye, Timestop, Raise-water, Unseen]     **spells
+[]   **teleporter-memory
+[Clothes:1, Holocaust-cloak:1, Blessed-scale:1, Elk-pelt:2]  **armor:armorFrequency
+[Fists:1]   **weapon:weaponFrequency for unarmed
+[]   **weapon:weaponFrequency for torch
+[Magestaff:1, Fireball:1, Blindinglight:1, Phasewall:1, Fireshield:1, Stonecast:1]   **weapon:weaponFrequency for magic staff
+[]   **weapon:weaponFrequency for longstaff
+[Bright-Halberd:1, Spear:2]   **weapon:weaponFrequency for spears
+[]   **weapon:weaponFrequency for bows
+[]   **weapon:weaponFrequency for crossbows
+[]   **weapon:weaponFrequency for axes
+[]   **weapon:weaponFrequency for dual-axes
+[]   **weapon:weaponFrequency for hammers
+[]   **weapon:weaponFrequency for daggers
+[]   **weapon:weaponFrequency for swords
+[]   **weapon:weaponFrequency for sword and shield
+[]   **weapon:weaponFrequency for dual blades
+[Lute-O-Destiny:1]   **weapon:weaponFrequency for lute
+2     **imageIndex
+2     **startStoryIndex
+0   **mapIndex
+988   **row
+122   **column
+988   **world-row
+122   **world-column
+world     **locationType
+999999     **might
+999999     **mind
+999999     **agility
+243     **body
+500     **manna
+20    **awareness
+1103   **reputation
+9   **bounty
+1000720   **gold
+1610620167   **experience
+2147483647     **experienceToLevelUp
+1     **weaponSelect
+3     **armorSelect
+1   **rations
+50     **numArrows
+none     **dogBasicInfo
+none     **horseBasicInfo
+4     **days
+5.54     ***time

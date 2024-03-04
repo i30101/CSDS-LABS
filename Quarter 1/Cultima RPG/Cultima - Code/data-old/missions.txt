@@ -1,0 +1,41 @@
+1025
+0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 **missionsGiven
+******************Mission 0
+Rescue     **type
+My subjects are held captive at Bisid grotto.  Free them for 300 gold coins.     **startStory
+My subjects still remain at Bisid grotto.  Free them with haste!     **middleStory
+Thou has done me great service.  Here is thy pay.     **endStory
+(50,50)     **(worldRow,worldCol)
+300     **goldReward
+null     **itemReward
+Bisid grotto     **clearLocation
+null     **target
+none     **targetHolder
+(122,40)     **(targetRow,targetCol)
+false     **failed
+******************Mission 1
+Death     **type
+none     **startStory
+none     **middleStory
+none     **endStory
+(-1,-1)     **(worldRow,worldCol)
+0     **goldReward
+null     **itemReward
+none     **clearLocation
+null     **target
+none     **targetHolder
+(-1,-1)     **(targetRow,targetCol)
+false     **failed
+******************Mission 2
+Death     **type
+none     **startStory
+none     **middleStory
+none     **endStory
+(-1,-1)     **(worldRow,worldCol)
+0     **goldReward
+null     **itemReward
+none     **clearLocation
+null     **target
+none     **targetHolder
+(-1,-1)     **(targetRow,targetCol)
+false     **failed

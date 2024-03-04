@@ -1,0 +1,59 @@
+259
+Rodan   **name
+-1 -1 -1     **mapMark
+0 0 0 0 0 0 0 0 0     **potions
+10 10 10 10 10     **flowerBoxCount
+496 2512 810 98      **specificExperience
+1351 30 17 9 12 10 70 38 21 6 68 454 107 14 376 2 1 317 37 0 0 11 6 1 7 0 55 1 1 1 7 0 15 6 2      **stats
+0 140 4 225 50 12 14 9 22 0 11 0 4 7 0      **infoIndexes
+0 6 9 0     **spellHotKeys
+-1 -1 -1 -1 -1 -1 -1 -1 -1     **potionHotKeys
+2 1 0 0 4 0 0 0     **weaponHotKeys
+[]     **effects
+[images/characters/player/unarmed1.Gif, images/characters/player/unarmed2.Gif, images/characters/player/unarmed3.Gif, images/characters/player/unarmed4.Gif]   **images
+[life-pearl, ruby, jade:2, mannastone:3, moonjem:2, dragonqueen-scales, wisdom-egg, mindtome, dragon-scales, serpent-egg:3, loaded-cube, songpage:0, lockpick:1]     **item:itemFrequency
+[Heal, Cure, Shiftwind, Knowing, Charm, Fear, Flight, Eagle-eye, Timestop, Raise-water, Unseen]     **spells
+[(0 509 678 world)]   **teleporter-memory
+[Clothes:1, Elk-pelt:1]  **armor:armorFrequency
+[Fists:1]   **weapon:weaponFrequency for unarmed
+[]   **weapon:weaponFrequency for torch
+[Fireball:1, Fireshield:1, Stonecast:1]   **weapon:weaponFrequency for magic staff
+[]   **weapon:weaponFrequency for longstaff
+[Spear:1]   **weapon:weaponFrequency for spears
+[]   **weapon:weaponFrequency for bows
+[]   **weapon:weaponFrequency for crossbows
+[]   **weapon:weaponFrequency for axes
+[]   **weapon:weaponFrequency for dual-axes
+[]   **weapon:weaponFrequency for hammers
+[]   **weapon:weaponFrequency for daggers
+[Sword:1]   **weapon:weaponFrequency for swords
+[]   **weapon:weaponFrequency for sword and shield
+[]   **weapon:weaponFrequency for dual blades
+[]   **weapon:weaponFrequency for lute
+0     **imageIndex
+2     **startStoryIndex
+9   **mapIndex
+101   **row
+1   **column
+509   **world-row
+678   **world-column
+cave     **locationType
+999999     **might
+999999     **mind
+999999     **agility
+2500     **body
+2147483647     **manna
+20    **awareness
+1105   **reputation
+1   **bounty
+815008   **gold
+1073773440   **experience
+2147483647     **experienceToLevelUp
+0     **weaponSelect
+1     **armorSelect
+14   **rations
+50     **numArrows
+none     **dogBasicInfo
+none     **horseBasicInfo
+10     **days
+13.04     ***time

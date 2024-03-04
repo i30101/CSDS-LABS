@@ -1,0 +1,59 @@
+1973
+Rodan   **name
+-1 -1 -1     **mapMark
+0 0 0 0 0 0 0 0 0     **potions
+10 10 10 10 10     **flowerBoxCount
+0 223 118 44      **specificExperience
+699 0 4 8 3 4 56 38 17 6 63 407 104 4 322 1 1 214 26 0 2 11 3 1 7 0 50 1 1 1 5 0 10 5 0      **stats
+0 140 4 225 15 7 14 2 21 0 11 0 4 0 0      **infoIndexes
+0 1 0 0     **spellHotKeys
+-1 -1 -1 -1 -1 -1 -1 -1 -1     **potionHotKeys
+2 0 2 1 9 0 14 0     **weaponHotKeys
+[]     **effects
+[images/characters/player/staff1.Gif, images/characters/player/staff2.Gif, images/characters/player/staff3.Gif, images/characters/player/staff4.Gif]   **images
+[mannastone, moonjem:2, loaded-cube, songpage:1, lockpick:3]     **item:itemFrequency
+[Heal, Cure, Shiftwind, Knowing, Charm, Fear, Flight, Eagle-eye, Timestop, Raise-water, Unseen]     **spells
+[]   **teleporter-memory
+[Clothes:1, Holocaust-cloak:1, Blessed-scale:1, Elk-pelt:2]  **armor:armorFrequency
+[Fists:1]   **weapon:weaponFrequency for unarmed
+[]   **weapon:weaponFrequency for torch
+[Magestaff:1, Fireball:1, Blindinglight:1, Phasewall:1, Fireshield:1, Stonecast:1]   **weapon:weaponFrequency for magic staff
+[]   **weapon:weaponFrequency for longstaff
+[Bright-Halberd:1, Spear:2]   **weapon:weaponFrequency for spears
+[]   **weapon:weaponFrequency for bows
+[]   **weapon:weaponFrequency for crossbows
+[]   **weapon:weaponFrequency for axes
+[]   **weapon:weaponFrequency for dual-axes
+[]   **weapon:weaponFrequency for hammers
+[]   **weapon:weaponFrequency for daggers
+[]   **weapon:weaponFrequency for swords
+[]   **weapon:weaponFrequency for sword and shield
+[]   **weapon:weaponFrequency for dual blades
+[Lute-O-Destiny:1]   **weapon:weaponFrequency for lute
+2     **imageIndex
+2     **startStoryIndex
+0   **mapIndex
+200   **row851
+200   **column572
+200   **world-row
+200   **world-column
+world     **locationType
+999999     **might
+999999     **mind
+999999     **agility
+999999     **body
+5000     **manna
+20    **awareness
+1126   **reputation
+1   **bounty
+0   **gold
+25854   **experience
+192275853     **experienceToLevelUp
+1     **weaponSelect
+2     **armorSelect
+11   **rations
+100     **numArrows
+none     **dogBasicInfo
+none     **horseBasicInfo
+10     **days
+9.89     ***time
