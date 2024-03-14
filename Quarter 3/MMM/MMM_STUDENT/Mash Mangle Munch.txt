@@ -1,0 +1,175 @@
+MASH, MANGLE, MUNCH!
+
+Play as a giant monster as you stomp on tanks, throw cars into buildings and swat news helicopters out of the air.
+Your monster set includes:
+
+King Clunk:  the result of genetic experiments gone wrong, King Clunk is a giant ape that ended up as a circus exhibit.
+Tired of his tormenters, King Clunk escaped from his captors to wreak havoc on the metropolis.
+Clunk is the fastest of the monsters, and can pick up cars and buses to use as projectile weapons against enemy units or buildings.
+Being ambidextrous, King Clunk can grab, hold, and throw enemy units with both hands.
+He can't swim very well and will start to drown if in the water too long.
+Crowds of people offer the best nutrients to keep him going and regain health, but a car, news helicopter or bus will do in a pinch.
+
+Gobzilly:  awakened from her ancient slumber from the bottom of the sea, Gobzilly is a menace from a past long gone.
+Slow on land, fast in the water and with destruction on her mind, Gobzilly can breathe fire to destroy enemy units or light structures ablaze.
+Food will only curb her appetite and not restore health.  Only the water can regenerate her if she is not weakened from hunger.
+Gobzilly is best served by sticking close to the water and knowing when to retreat.
+
+Boobootron:  a robotic visitor from another world, Boobootron is lost, confused, and growing more irritated by the minute.
+He has a powerful death ray that can rotate in any direction and is well adept at stomping on buildings.
+But far removed from his home world and core power-source, Boobootron is losing energy by the moment.
+He can only regain energy by absorbing power stations, electrical towers, and trains.
+
+WoeMantis:  oil-drillers on a newly discovered island found the WoeMantis nest and stole her eggs.
+Mom is now out on a frantic mission to find her children and wreck anything that gets in her way.
+The WoeMantis is fast, can fly, and has a powerful shriek that can stun ground enemies.
+But the WoeMantis is much more vulnerable to projectile and explosive attacks, and she can't swim very well.
+While the WoeMantis does not have much stomp ability, she lands with a powerful thud, and can easily stun and capture food.
+The jump button can be used to take off in flight, as well as land on the ground.
+Be careful in flight - while it is a fast way to get around, all armed units will be able to see and shoot at you while flying.
+
+The Blop:  the offspring of the Bird Flu and the Superbug, the Blop was disposed of by the CDC in a vat of toxic waste.
+Growing to enormous size with an insatiable appetite, the amorphous mass is out to punish its makers.
+The Blop leaves a trail of toxic sludge wherever it goes, so it must be careful when making tracks.
+It can trap victims to eat, but lay waste to too much space and the food will never come back.
+If the Blop is at full health, it can split into two, but at the expense of damaging itself.
+If it gets close enough to its twin, it can recombine into a single monster to regain health.
+
+Wormoid:  while fracking for natural gas, the Shadow Government Energy Conglomerate (SGEC) disturbed the subterranean nest of Wormoid.
+Agitated by the noise pollution from SGEC's drilling and pounding, Wormoid is out to silence her noisy neighbors upstairs.
+Wormoid can not jump, but she sure can dig: rendering her invisible to unsuspecting civilians or the pesky military machines.
+But be careful not to dig under electrical towers, gas stations or water:  Wormoid can't swim, and is vulnerable to electricity and fire.
+Wormoid has no arms, but she can spit a sticky web to trap food for later.  Her web has another nifty function:
+Chain a web between two close towers to create a trap for low-flying aircraft.
+
+KEYBOARD CONTROLS (tap keys - do not hold down):
+
+movement:		arrow keys (up, left, down, right), or W,A,S,D if there isn't a 2nd player. 
+			Or move mouse in a location relative to where you want to move the monster.
+			When the cursor is close to the monster, it changes the direction the monster is facing.  
+			Moving the cursor further away and the monster will walk in that direction.
+			Put the mouse in motion for the monster to move.
+shoot/throw:		Enter or mouse left click (this will split the Blop if it is at full health, or recombine them if they are close enough).
+eat:			Shift
+grab:			Ctrl
+jump/stomp:		Space or mouse right click.  You can not stomp or jump while moving.
+turn head:		<, > (turn head left, turn head right), or use the center mouse wheel
+shoot air targets:	Space + Enter
+
+quit:			Esc to back out to the main menu, or quit from the main menu.
+pause:			p
+toggle map/keys:	m
+			You can see the key assignments to control the player, or toggle a map.
+   			In the map, the red dot represents where you are with respect to the 9 grid panels.
+			Gray areas represent dense city, green areas are suburbs.
+			Rivers, beaches and railroad tracks are marked, and landmarks are shown with a white "L".
+			The grid block will darken when an area has so much damage it is no longer habitable.
+increase game speed:	Keypad ]
+decrease game speed: 	Keypad [
+increase screen size:   Keypad +
+decrease screen size:   Keypad -
+
+A second player can join as another monster. 
+
+toggle player 2 partner:1 (In MONSTER MASH and EARTH INVADERS modes, this will remove the possibility of getting on the highscore table.)
+p2 movement:		W,A,S,D (up, left, down, right)
+p2 shoot/throw:		C
+p2 eat:			E
+p2 grab:		G
+p2 jump/stomp:		T
+p2 turn head:		Z,X (turn head left, turn head right)
+p2 shoot air targets:	T + C
+
+A second player can join as a vehicle. 
+
+toggle player 2 vehicle:2 (In CITY SAVER mode, this will remove the possibility of getting on the high score table.)
+p2 movement:		W,A,S,D (up, left, down, right)
+p2 fire:		C
+p2 rotate cannon:	Z,X (rotate left, rotate right)
+
+You can add another AI monster as well.  
+
+toggle AI monster:      3 (In MONSTER MASH, this will remove the possibility of getting on the high score table.)
+
+More potent enemy units will appear as more damage is done and the threat level increases.
+Responders include:  Local police, National Guard, the Army, and the Government.
+When the government gets involved, they can approve the use of the atomic bomb to stop the monster.
+If a black bomber appears, you have to strike it down before it reaches the end of the grid or escape to another grid.
+
+Some units can not see you if you are hiding in buildings.  Destroying all of them may not serve you well all of the time.
+The artillery cannon, aircraft, coast guard gunboat, mobile missile launcher and destroyer are tracking your location:  buildings will not hide you from them.
+You can also use buildings to help absorb incoming fire from missiles and artillery shells.
+
+The wind direction can affect the spread of fires, so mind the wind to maximize damage.
+Use your ability to turn your head to move one way and shoot another.  This is a great way to deal damage to enemy units while avoiding incoming fire.  Take care of firetrucks early before they undo your hard work.
+
+Grabbing a cluster of running civilians can be tricky.  There is a chance you will smash them in the attempt.  
+The safest way to grab a crowd or a car is to grab them from behind as they are running away from you.
+Consider saving some of the food you pick up to eat for later.  Having a few army troops in one claw can come in handy when injured or weakened.
+King Clunk has an advantage in that he can hold crowds and vehicles in both hands.  The Blop has an advantage in that it can reach and eat almost anything.
+
+Each map will include a landmark structure:  destroying it will deal massive property value damage, but immediately raise the threat response.  Prebuilt maps might contain several landmarks.
+Likewise, there may be a fuel depot and gas stations that will explode if damaged too heavily.  Try to avoid stomping on them.
+There is a chance that the world will include specialty areas, like suburbs, a carnival, or a casino district.
+
+Prebuilt cities include Las Vegas, London, New York City, St Louis, Settle, Chicago and Washington DC.
+
+Enemy units:
+
+Threat response: ?
+CROWD civilian: 	all they can do is run and provide nutrients for the monster.
+CYCLE civilian:		the motorcycle is the fastest of the ground units.
+CAR civilian:   	good for a snack and can be used as a projectile for King-Clunk.
+CAR bus:		also projectile ammo, and a bit more nutrients when eaten.
+CAR firetruck:		often dispatched when there is a fire and puts them out, and hoses away Blop-glop off the streets to boot.
+AIR newscopter: 	in their effort to get a good picture for the papers, newscopters fly just low enough to grab.
+AIR civilian:		slow enough for The-Blop to catch.
+BOAT civilian:		yuppie nibblets.
+
+Threat response: Local Police
+CYCLE police:		a police officer on a motorcycle with a gun.  What else would you expect?
+CAR police:		a little slower but will pepper you with bullets.
+
+Threat response: National Guard
+CAR jeep:		it has a rotating, mounted machinegun in the back.
+CROWD troops:		delicious, but deadly.  They will not be shy about shooting at you.
+BOAT coastguard:	they are tracking your movements, and have a hefty mounted gun on the bridge.
+
+Threat level: US Military
+Tank tank:		slow moving with a rotating cannon and powerful shells.
+AIR fighter:		fast, with stinging missiles.  The fighter plane can see you when you are hiding behind buildings.
+BOAT destroyer:		also tracks your movements, so you can't hide long behind buildings.
+			The destroyer's shells can pass over the skyline to drop on to your location.
+
+Threat level: Global Threat
+Tank flame:		this tank is equipped with a flame thrower.
+Tank artillery:		artillery shells are lobbed up higher to pass over the buildings and on to you.
+Tank missile:		very slow but fires high-yield rockets that have a wide radius damage.
+Air bomber		if it lines up its bombing run correctly, you will want to get out of its way quickly.
+AIR nukebomber:		approved to drop an Atomic Bomb on you.  Take it out or run before it completes its bombing run.
+
+ALTERNATE GAME MODES -
+BOMBER DODGER:  the cities have been evacuated, and the military is taking a last-ditch effort to stop the monster.
+		A round-the-clock bombing of the city has begun - how long can you survive?
+
+CITY SAVER: 	the tables are turned, and now you are a member of the military.  Stop the monsters and save the city.
+		You only have one city zone to protect, but with every building that a monster destroys, the city's property value decreases.
+
+EARTH INVADERS: waves of pesky vehicles close in from the North.  Hold your ground on the South side of town for as long as you can.  
+
+DIFFICULTY LEVELS -
+EASY:  		For MONSTER MASH and BOMBER DODGER, render 1 entire city zone uninhabitable.
+		For CITY SAVER mode, fight one monster.
+		For EARTH INVADERS, vehicles start slow.
+
+MEDIUM:		For MONSTER MASH and BOMBER DODGER, render 4 city zones uninhabitable.
+		FOR CITY SAVER, fight 2 monsters.
+		For EARTH INVADERS, vehicles start at normal speed.
+
+HARD:		For MONSTER MASH and BOMBER DODGER, render 6 city zones uninhabitable.
+		For CITY SAVER, fight 3 monsters.
+		For EARTH INVADERS, vehicles move briskly.
+
+NIGHTMARE:	For MONSTER MASH and BOMBER DODGER, render ALL 9 city zones uninhabitable.
+		For CITY SAVER, fight 4 monsters.
+		For EARTH INVADERS, vehicles move very fast.

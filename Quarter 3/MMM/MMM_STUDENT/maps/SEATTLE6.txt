@@ -1,0 +1,120 @@
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ #EH #EH #EH SU1 #EH #EH #EH SU1 #EH #EH #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ MD1 S-- SX1 SR1 SR1 SR1 SX1 SR1 SR1 SR1
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ MD1 MD1 MD1 MD1 S-- SU1 S-- #EH S-- SU1 S-- #EH #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- SU1 SX2 S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ MD1 MD1 MD1 MD1 S-- SX1 SR1 SR1 SR1 SX1 SR1 SR1 SR1
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- SU1 SX2 S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ MD1 MD1 MD1 MD1 S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ MD1 SX2 SX3 SX1 SR1 SX1 SR1 SR1 SR1 SX1 SR1 SR1 SR1
+~~~ ~~~ ~~~ ~~~ MD1 SX3 SX2 S-- S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ MD1 MD1 MD1 S-- S-- SU1 SX3 #EH S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- S-- SX1 SR1 SR1 SR1 SX1 SR1 SR1 SR1
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ MD1 S-- S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ S-- #EH S-- SU1 S-- S-- S-- SU1 S-- S-- #EH
+~~~ ~~~ ~~~ ~~~ ~~~ ~~~ #EH #EH #EH SU1 #EH #EH #EH SU1 #EH #EH #EH
+
+BLDG - BUISNESS:1 7 6 30 false true 1 35 1 584349
+BLDG - HIGHRISE:1 8 6 30 false true 1 50 3 3467435
+TREES:1 10 6 30 true true 1 -1 0 2007
+BLDG - HOUSES:1 11 6 30 true true 1 -1 0 778381
+TREES:1 12 6 30 true true 1 -1 0 2007
+TREES:1 14 6 30 true true 1 -1 0 2007
+TREES:1 15 6 30 true true 1 -1 0 2007
+BLDG - HIGHRISE:2 8 6 30 false true 1 50 2 4199645
+BLDG - TOWER:2 10 6 30 false true 2 90 2 33940196
+BLDG - HIGHRISE:2 11 6 30 false true 1 50 0 3535488
+BLDG - TOWER:2 12 6 30 false true 2 90 0 29290367
+BLDG - HIGHRISE:2 14 6 30 false true 1 50 3 2694362
+BLDG - TOWER:2 15 6 30 false true 2 90 0 29290367
+BLDG - BUISNESS:3 7 6 30 false true 1 35 0 619382
+BLDG - HIGHRISE:3 8 6 30 false true 1 50 3 3467435
+BLDG - TOWER:3 10 6 30 false true 2 90 4 17845139
+ELEC TOWER 0:3 11 6 10 false false 1 90 0 150000
+BLDG - TOWER:3 12 6 30 false true 2 90 5 13084450
+BLDG - TOWER:3 14 6 30 false true 2 90 3 21957640
+ELEC TOWER 0:3 15 6 10 false false 1 90 0 150000
+BLDG - HIGHRISE:4 8 6 30 false true 1 50 1 2168166
+BLDG - BUISNESS:4 10 6 30 false true 1 35 0 925075
+BLDG - HIGHRISE:4 11 6 30 false true 1 50 0 3535488
+BLDG - TOWER:4 12 6 30 false true 2 90 2 33940196
+BLDG - HIGHRISE:4 14 6 30 false true 1 50 2 2020876
+BLDG - HIGHRISE:4 15 6 30 false true 1 50 0 3535488
+BLDG - BUISNESS:5 7 6 30 false true 1 35 2 869243
+BLDG - HIGHRISE:5 8 6 30 false true 1 50 3 3467435
+TREES:5 10 6 30 true true 1 -1 0 2007
+TREES:5 11 6 30 true true 1 -1 0 2007
+TREES:5 12 6 30 true true 1 -1 0 2007
+TREES:5 14 6 30 true true 1 -1 0 2007
+FUEL - GAS STATION:5 15 6 30 false true 1 -1 1 372866
+BLDG - HIGHRISE:6 8 6 30 false true 1 50 1 2168166
+BLDG - HIGHRISE:6 10 6 30 false true 1 50 0 3535488
+BLDG - BUISNESS:6 11 6 30 false true 1 35 0 925075
+BLDG - TOWER:6 12 6 30 false true 2 90 1 39499439
+BLDG - TOWER:6 14 6 30 false true 2 90 0 29290367
+BLDG - HIGHRISE:6 15 6 30 false true 1 50 2 2020876
+BLDG - HIGHRISE:7 8 6 30 false true 1 50 2 4199645
+BLDG - BUISNESS:7 10 6 30 false true 1 35 1 492287
+BLDG - TOWER:7 11 6 30 false true 2 90 0 29290367
+BLDG - HIGHRISE:7 12 6 30 false true 1 50 3 2694362
+BLDG - TOWER:7 14 6 30 false true 2 90 4 17845139
+BLDG - TOWER:7 15 6 30 false true 2 90 2 33940196
+BLDG - BUISNESS:8 6 6 30 false true 1 35 0 619382
+FUEL DEPOT:8 7 6 30 false true 1 15 1 1000000
+BLDG - HIGHRISE:8 8 6 30 false true 1 50 3 3467435
+BLDG - HIGHRISE:8 10 6 30 false true 1 50 2 2020876
+BLDG - HIGHRISE:8 11 6 30 false true 1 50 1 3978699
+BLDG - TOWER:8 12 6 30 false true 2 90 2 33940196
+BLDG - TOWER:8 14 6 30 false true 2 90 3 21957640
+BLDG - HIGHRISE:8 15 6 30 false true 1 50 1 3978699
+TREES:9 10 6 30 true true 1 -1 0 2007
+TREES:9 11 6 30 true true 1 -1 0 2007
+BLDG - HOUSES:9 12 6 30 true true 1 -1 0 778381
+TREES:9 14 6 30 true true 1 -1 0 2007
+TREES:9 15 6 30 true true 1 -1 0 2007
+BLDG - HIGHRISE:10 7 6 30 false true 1 50 3 3324992
+BLDG - HIGHRISE:10 8 6 30 false true 1 50 1 2168166
+BLDG - TOWER:10 10 6 30 false true 2 90 3 21957640
+BLDG - HIGHRISE:10 11 6 30 false true 1 50 3 2694362
+BLDG - HIGHRISE:10 12 6 30 false true 1 50 0 3535488
+BLDG - HIGHRISE:10 14 6 30 false true 1 50 3 2694362
+BLDG - HIGHRISE:10 15 6 30 false true 1 50 2 2020876
+BLDG - BUISNESS:11 6 6 30 false true 1 35 1 584349
+BLDG - HIGHRISE:11 7 6 30 false true 1 50 1 4550896
+BLDG - HIGHRISE:11 8 6 30 false true 1 50 0 2654586
+BLDG - BUISNESS:11 10 6 30 false true 1 35 3 415342
+ELEC TOWER 0:11 11 6 10 false false 1 90 0 150000
+BLDG - HIGHRISE:11 12 6 30 false true 1 50 1 3978699
+BLDG - TOWER:11 14 6 30 false true 2 90 1 39499439
+BLDG - TOWER:11 15 6 30 false true 2 90 0 29290367
+BLDG - BUISNESS:12 7 6 30 false true 1 35 3 415342
+BLDG - HIGHRISE:12 8 6 30 false true 1 50 3 3467435
+FUEL DEPOT:12 10 6 30 false true 1 15 1 1000000
+BLDG - HIGHRISE:12 11 6 30 false true 1 50 2 2020876
+BLDG - TOWER:12 12 6 30 false true 2 90 4 17845139
+BLDG - HIGHRISE:12 14 6 30 false true 1 50 0 3535488
+BLDG - HIGHRISE:12 15 6 30 false true 1 50 1 3978699
+BLDG - HIGHRISE:13 7 6 30 false true 1 50 2 2698703
+BLDG - HIGHRISE:13 8 6 30 false true 1 50 1 2168166
+TREES:13 10 6 30 true true 1 -1 0 2007
+TREES:13 11 6 30 true true 1 -1 0 2007
+TREES:13 14 6 30 true true 1 -1 0 2007
+BLDG - HOUSES:13 15 6 30 true true 1 -1 0 778381
+BLDG - BUISNESS:14 6 6 30 false true 1 35 0 619382
+BLDG - HIGHRISE:14 7 6 30 false true 1 50 0 2654586
+BLDG - HIGHRISE:14 8 6 30 false true 1 50 2 4199645
+BLDG - TOWER:14 10 6 30 false true 2 90 1 39499439
+BLDG - HIGHRISE:14 11 6 30 false true 1 50 1 3978699
+BLDG - TOWER:14 12 6 30 false true 2 90 2 33940196
+BLDG - TOWER:14 14 6 30 false true 2 90 0 29290367
+BLDG - HIGHRISE:14 15 6 30 false true 1 50 1 3978699
+BLDG - BUISNESS:15 6 6 30 false true 1 35 1 584349
+ELEC TOWER 1:15 7 6 10 false false 1 90 1 150000
+BLDG - HIGHRISE:15 8 6 30 false true 1 50 3 2694362
+BLDG - HIGHRISE:15 10 6 30 false true 1 50 0 3535488
+BLDG - TOWER:15 11 6 30 false true 2 90 5 13084450
+BLDG - HIGHRISE:15 12 6 30 false true 1 50 2 2020876
+BLDG - HIGHRISE:15 14 6 30 false true 1 50 2 2020876
+BLDG - TOWER:15 15 6 30 false true 2 90 2 33940196

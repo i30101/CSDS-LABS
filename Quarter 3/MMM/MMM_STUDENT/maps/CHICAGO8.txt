@@ -1,0 +1,70 @@
+#EH #EH SU1 #EH #EH #EH SU1 #EH ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH PK3 SU1 PK1 PK2 PK1 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK2 PK3 PK2 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+SR1 SR1 SX1 PK3 SX1 PK3 SX1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH PK3 SU1 PK3 SX1 PK3 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK2 PK3 PK2 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK1 PK2 PK1 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+SR1 SR1 SX1 SR1 SR1 SR1 SX1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK2 PK3 PK2 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK3 PK3 PK3 SU1 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK3 PK3 PK3 SU1 MD2 MD2 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+SR1 SR1 SX1 PK3 PK3 PK3 SX1 PK3 PK3 MD2 ~~~ ~~~ ~~~ ~~~ ~~~ ~~~ ~~~
+#EH S-- SU1 PK2 PK3 PK2 SU1 PK3 PK3 PK2 PK3 PK3 PK3 PK3 PK1 ~~~ ~~~
+#EH #EH SU1 PK2 PK2 PK2 SU1 PK3 PK2 PK2 MD1 ~~~ ~~~ MD1 PK2 ~~~ ~~~
+#EH S-- SU1 PK2 PK2 PK2 SU1 SX3 SX2 PK3 ~~~ ~~~ ~~~ MD1 PK2 ~~~ ~~~
+SR1 SR1 SX1 SR1 SR1 SR1 SX1 PK3 PK3 PK3 ~~~ ~~~ ~~~ PK2 PK3 ~~~ ~~~
+#EH #EH SU1 #EH #EH #EH SU1 #EH #EH #EH #EH #EH #EH #EH #EH #EH #EH
+
+BLDG - HIGHRISE:1 1 8 30 false true 1 50 1 3021644
+TREES:1 3 8 30 true true 1 -1 1 2660
+TREES:1 5 8 30 true true 1 -1 0 2998
+BLDG - HIGHRISE:2 1 8 30 false true 1 50 0 3769357
+TREES:2 3 8 30 true true 1 -1 0 2998
+TREES:2 5 8 30 true true 1 -1 0 2998
+TREES:3 1 8 30 true true 1 -1 0 2918
+BLDG - BUISNESS:3 4 8 30 false true 1 35 2 233028
+BLDG - HIGHRISE:4 1 8 30 false true 1 50 2 3423673
+BLDG - BUISNESS:4 4 8 30 false true 1 35 2 233028
+BLDG - HIGHRISE:5 1 8 30 false true 1 50 3 2673598
+TREES:5 3 8 30 true true 1 -1 0 2998
+TREES:5 5 8 30 true true 1 -1 0 2998
+BLDG - HIGHRISE:6 1 8 30 false true 1 50 2 3423673
+TREES:6 3 8 30 true true 1 -1 1 2378
+TREES:6 5 8 30 true true 1 -1 1 2378
+BLDG - BUISNESS:7 1 8 30 false true 1 -1 1 618990
+TREES:7 3 8 30 true true 1 -1 0 2918
+TREES:7 4 8 30 true true 1 -1 0 2918
+TREES:7 5 8 30 true true 1 -1 0 2918
+BLDG - HIGHRISE:8 1 8 30 false true 1 50 0 3769357
+BLDG - HIGHRISE:9 1 8 30 false true 1 50 1 3021644
+BLDG - HIGHRISE:10 1 8 30 false true 1 50 3 2673598
+TREES:10 7 8 30 true true 1 -1 0 2033
+FUEL - GAS STATION:11 1 8 30 false true 1 -1 1 531171
+TREES:11 7 8 30 true true 1 -1 0 2033
+BLDG - BUISNESS:11 8 8 30 false true 1 35 3 720790
+TREES:11 9 8 30 true true 1 -1 0 2033
+TREES:11 10 8 30 true true 1 -1 0 2033
+TREES:11 11 8 30 true true 1 -1 0 2033
+TREES:11 12 8 30 true true 1 -1 0 2033
+TREES:11 13 8 30 true true 1 -1 0 2033
+TREES:11 14 8 30 true true 1 -1 0 2686
+BLDG - HIGHRISE:12 1 8 30 false true 1 50 3 2673598
+TREES:12 7 8 30 true true 1 -1 0 2033
+TREES:12 8 8 30 true true 1 -1 0 2033
+TREES:12 10 8 30 true true 1 -1 0 2033
+TREES:12 11 8 30 true true 1 -1 0 2033
+TREES:12 12 8 30 true true 1 -1 0 2033
+TREES:12 13 8 30 true true 1 -1 0 2033
+BLDG - BUISNESS:12 14 8 30 false true 1 35 3 463037
+ELEC TOWER 0:13 1 8 10 false false 1 90 0 150000
+BLDG - BUISNESS:13 7 8 30 false true 1 35 3 918563
+BLDG - BUISNESS:13 8 8 30 false true 1 35 3 720790
+BLDG - HIGHRISE:14 1 8 30 false true 1 50 1 3021644
+TREES:14 3 8 30 true true 1 -1 0 2918
+TREES:14 5 8 30 true true 1 -1 0 2918
+BLDG - BUISNESS:14 7 8 30 false true 1 35 3 463037
+BLDG - BUISNESS:14 8 8 30 false true 1 35 3 463037
+BLDG - BUISNESS:15 1 8 30 false true 1 -1 0 950883
+TREES:15 8 8 30 true true 1 -1 0 2033
+TREES:15 9 8 30 true true 1 -1 0 2033
