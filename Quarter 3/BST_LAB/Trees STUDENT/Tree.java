@@ -13,7 +13,7 @@ public class Tree {
 
     
     /**Adds a new element to the tree such that the tree is still an ordered Binary Search Tree.
-     * @param  x a non-null Comparable Object.
+     * @param x a non-null Comparable Object.
      */   
     public void add(Comparable x) {
         myRoot = addHelper(myRoot, x);
@@ -21,9 +21,9 @@ public class Tree {
     
 
     /**Helper method for add(x).
-     * @param   root is the root of a tree (or subtree for recursive calls). 
-     * @param   x a non-null Comparable Object.   
-     * @return  the root of the ordered binary search tree after x has been added.
+     * @param root is the root of a tree (or subtree for recursive calls). 
+     * @param x a non-null Comparable Object.   
+     * @return the root of the ordered binary search tree after x has been added.
      */    
     private TreeNode addHelper(TreeNode root, Comparable x) {
     //************COMPLETE THIS METHOD****************************        
@@ -33,7 +33,7 @@ public class Tree {
     
 
     /**Removes an element from the tree such that the tree is still an ordered Binary Search Tree.
-     * @param  x a non-null Comparable Object.
+     * @param x a non-null Comparable Object.
      */   
     public void remove(Comparable x) {
         myRoot = removeHelper(myRoot, x);
@@ -41,9 +41,9 @@ public class Tree {
     
 
     /**Helper method for remove(x).
-     * @param   root is the root of a tree (or subtree for recursive calls).  
-     * @param   x a non-null Comparable Object. 
-     * @return  the root of the ordered binary search tree after x has been removed.
+     * @param root is the root of a tree (or subtree for recursive calls).  
+     * @param x a non-null Comparable Object. 
+     * @return the root of the ordered binary search tree after x has been removed.
      */   
     private TreeNode removeHelper(TreeNode root, Comparable x) {
     //************COMPLETE THIS METHOD*****************************         
@@ -60,7 +60,7 @@ public class Tree {
 
     /**Helper method for showPreOrder().
      * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (or subtree for recursive calls).  
+     * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void preOrderHelper(TreeNode root) {
     //************COMPLETE THIS METHOD*****************************
@@ -76,7 +76,7 @@ public class Tree {
 
     /**Helper method for showInOrder().
      * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (or subtree for recursive calls).  
+     * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void inOrderHelper(TreeNode root) {
         if(root!=null)
@@ -88,7 +88,7 @@ public class Tree {
     }
         
 
-    /** Displays  the elements of the tree such that they are displayed in postfix order. */ 
+    /** Displays the elements of the tree such that they are displayed in postfix order. */ 
     public void showPostOrder() {
         postOrderHelper(myRoot);
         System.out.println();   
@@ -97,7 +97,7 @@ public class Tree {
 
     /**Helper method for showPostOrder(). 
      * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (or subtree for recursive calls).  
+     * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void postOrderHelper(TreeNode root) {
     //************COMPLETE THIS METHOD*****************************  
@@ -105,7 +105,7 @@ public class Tree {
     
 
     /**Searches for an element in the tree.
-     * @param   x a non-null Comparable Object.
+     * @param x a non-null Comparable Object.
      * @return  true if x is found; false if x is not found in the tree
      */    
     public boolean contains(Comparable x) {
@@ -116,10 +116,10 @@ public class Tree {
 
 
     /**Helper method for contains(x).
-     * Because  the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (subroots for recursive calls).
-     * @param   x a non-null Comparable Object.
-     * @return  a pointer to the TreeNode that contains the value x; returns null if not found
+     * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
+     * @param root is the root of a tree (subroots for recursive calls).
+     * @param x a non-null Comparable Object.
+     * @return a pointer to the TreeNode that contains the value x; returns null if not found
      */   
     private TreeNode searchHelper(TreeNode root, Comparable x) {
     //************COMPLETE THIS METHOD*****************************
@@ -128,10 +128,10 @@ public class Tree {
     
 
     /**Helper method for removeHelper(root, x).
-     * Because  the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (subroots for recursive calls).
-     * @param   x a non-null Comparable Object.
-     * @return  a pointer to the parent of the node that contains the value x; returns null if not found
+     * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
+     * @param root is the root of a tree (subroots for recursive calls).
+     * @param x a non-null Comparable Object.
+     * @return a pointer to the parent of the node that contains the value x; returns null if not found
      */    
     private TreeNode searchParent(TreeNode root, Comparable x) {
     //************COMPLETE THIS METHOD*****************************
@@ -140,8 +140,8 @@ public class Tree {
     
 
     /**Helper method for removeHelper(root, x).
-     * @param   root is the root of a tree.
-     * @return  true if root has no children; returns false if root has 1 or 2 children
+     * @param root is the root of a tree.
+     * @return true if root has no children; returns false if root has 1 or 2 children
      */ 
     private boolean isLeaf(TreeNode root) {
     //************COMPLETE THIS METHOD*****************************  
@@ -150,8 +150,8 @@ public class Tree {
 
 
     /**Helper method for removeHelper(root, x).
-     * @param   root is the root of a tree.
-     * @return  true if root has exactly one child; returns false if root has 0 or 2 children
+     * @param root is the root of a tree.
+     * @return true if root has exactly one child; returns false if root has 0 or 2 children
      */
     private boolean oneKid(TreeNode root) {
     //************COMPLETE THIS METHOD*****************************
@@ -168,9 +168,9 @@ public class Tree {
     
 
     /**Helper method for size().
-     * Because  the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (or subtree for recursive calls). 
-     * @return  the size of the tree that starts at root 
+     * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
+     * @param root is the root of a tree (or subtree for recursive calls). 
+     * @return the size of the tree that starts at root 
      */    
     private int sizeHelper(TreeNode root) {
     //************COMPLETE THIS METHOD*****************************  
@@ -189,8 +189,8 @@ public class Tree {
 
 
     /**Helper method for height().
-     * Because  the process is recursive and needs to continue by sending subtrees as the next root to process.
-     * @param   root is the root of a tree (or subtree for recursive calls). 
+     * Because the process is recursive and needs to continue by sending subtrees as the next root to process.
+     * @param root is the root of a tree (or subtree for recursive calls). 
      * @return the height/depth/number of levels of the tree that starts at root.
      */   
     public int heightHelper(TreeNode root) {
@@ -200,10 +200,10 @@ public class Tree {
     
 
     /**EXTRA CREDIT: returns true if p is an ancestor of c.
-     * @param   root is the root of a tree (or subtree for recursive calls). 
-     * @param   p a non-null Comparable Object that can be found in the tree. 
-     * @param   c a non-null Comparable Object that can be found in the tree.  
-     * @return  true if p is an ancestor of c; return false if not or one/both can not be found in the tree.
+     * @param root is the root of a tree (or subtree for recursive calls). 
+     * @param p a non-null Comparable Object that can be found in the tree. 
+     * @param c a non-null Comparable Object that can be found in the tree.  
+     * @return true if p is an ancestor of c; return false if not or one/both can not be found in the tree.
      */    
     public boolean isAncestor(TreeNode root, Comparable p, Comparable c) {
     //************COMPLETE THIS METHOD*****************************   
@@ -214,8 +214,8 @@ public class Tree {
     /**EXTRA CREDIT: displays all elements of the tree at a particular depth/level/height.
      * level 0 will show the root.  level 1 will show all elements that are children of the root.
      * A level that is less than 0 or greater than the max depth will display nothing.
-     * @param   root is the root of a tree. 
-     * @param   level is the depth in which you want to see all the elements of. 
+     * @param root is the root of a tree. 
+     * @param level is the depth in which you want to see all the elements of. 
      */ 
     public void printLevel(TreeNode root, int level) {
         
@@ -225,7 +225,7 @@ public class Tree {
     /**Nothing to see here...move along.*/     
     private String temp;
     /**Helper method for toString().
-     * @param   root is the root of a tree (or subtree for recursive calls). 
+     * @param root is the root of a tree (or subtree for recursive calls). 
      */ 
     private void inOrderHelper2(TreeNode root) {
         if(root!=null)

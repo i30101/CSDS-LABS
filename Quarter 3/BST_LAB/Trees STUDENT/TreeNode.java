@@ -55,7 +55,7 @@ public class TreeNode {
 
 
     /** Mutator method to allow the value of the node to be changed to a new value; pre-condition: this is not null
-     *  @param v  what we want to change the value to
+     * @param v  what we want to change the value to
      */
     public void setValue(Comparable v) { 
         value = v;
@@ -63,7 +63,7 @@ public class TreeNode {
 
 
     /** Mutator method to allow the left-pointer to be changed to point to something new; pre-condition: this is not null
-     *  @param l  what we want the left-pointer to point to
+     * @param l  what we want the left-pointer to point to
      */
     public void setLeft(TreeNode l) { 
         left = l; 
@@ -71,7 +71,7 @@ public class TreeNode {
 
 
     /** Mutator method to allow the right-pointer to be changed to point to something new; pre-condition: this is not null
-     *  @param r  what we want the right-pointer to point to
+     * @param r  what we want the right-pointer to point to
      */
     public void setRight(TreeNode r) { 
         right = r; 
@@ -79,7 +79,7 @@ public class TreeNode {
 
 
     /** Return the value contents of node as a string
-     *  @return  a String showing the contents of the value in the node  
+     * @return  a String showing the contents of the value in the node  
      */
     @Override
     public String toString() {
