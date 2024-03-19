@@ -26,7 +26,7 @@ public class Tree {
      * @return the root of the ordered binary search tree after x has been added.
      */    
     private TreeNode addHelper(TreeNode root, Comparable x) {
-    //************COMPLETE THIS METHOD****************************        
+        //************COMPLETE THIS METHOD****************************        
         
         return root;   
     }
@@ -46,7 +46,7 @@ public class Tree {
      * @return the root of the ordered binary search tree after x has been removed.
      */   
     private TreeNode removeHelper(TreeNode root, Comparable x) {
-    //************COMPLETE THIS METHOD*****************************         
+        //************COMPLETE THIS METHOD*****************************         
         return root;    
     }
     
@@ -63,7 +63,7 @@ public class Tree {
      * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void preOrderHelper(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************
+        //************COMPLETE THIS METHOD*****************************
     }
     
 
@@ -100,7 +100,7 @@ public class Tree {
      * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void postOrderHelper(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************  
+        //************COMPLETE THIS METHOD*****************************  
     }
     
 
@@ -122,7 +122,7 @@ public class Tree {
      * @return a pointer to the TreeNode that contains the value x; returns null if not found
      */   
     private TreeNode searchHelper(TreeNode root, Comparable x) {
-    //************COMPLETE THIS METHOD*****************************
+        //************COMPLETE THIS METHOD*****************************
         return null;     //temporary return statement to keep things compiling
     }
     
@@ -134,7 +134,7 @@ public class Tree {
      * @return a pointer to the parent of the node that contains the value x; returns null if not found
      */    
     private TreeNode searchParent(TreeNode root, Comparable x) {
-    //************COMPLETE THIS METHOD*****************************
+        //************COMPLETE THIS METHOD*****************************
         return null;     //temporary return statement to keep things compiling
     }
     
@@ -144,7 +144,7 @@ public class Tree {
      * @return true if root has no children; returns false if root has 1 or 2 children
      */ 
     private boolean isLeaf(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************  
+        //************COMPLETE THIS METHOD*****************************  
         return false;     //temporary return statement to keep things compiling
     }
 
@@ -154,7 +154,7 @@ public class Tree {
      * @return true if root has exactly one child; returns false if root has 0 or 2 children
      */
     private boolean oneKid(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************
+        //************COMPLETE THIS METHOD*****************************
         return false;     //temporary return statement to keep things compiling
     }
     
@@ -173,7 +173,7 @@ public class Tree {
      * @return the size of the tree that starts at root 
      */    
     private int sizeHelper(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************  
+        //************COMPLETE THIS METHOD*****************************  
         return 0;     //temporary return statement to keep things compiling
     }
 
@@ -194,7 +194,7 @@ public class Tree {
      * @return the height/depth/number of levels of the tree that starts at root.
      */   
     public int heightHelper(TreeNode root) {
-    //************COMPLETE THIS METHOD*****************************
+        //************COMPLETE THIS METHOD*****************************
         return 0;     //temporary return statement to keep things compiling
     }
     
@@ -206,7 +206,7 @@ public class Tree {
      * @return true if p is an ancestor of c; return false if not or one/both can not be found in the tree.
      */    
     public boolean isAncestor(TreeNode root, Comparable p, Comparable c) {
-    //************COMPLETE THIS METHOD*****************************   
+        //************COMPLETE THIS METHOD*****************************   
         return false;     //temporary return statement to keep things compiling
     }
     
