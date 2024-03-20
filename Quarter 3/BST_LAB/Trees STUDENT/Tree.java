@@ -27,27 +27,23 @@ public class Tree {
      */    
     private TreeNode addHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD****************************        
-        // root node is null
-        if (myRoot == null) {
+        if (myRoot == null) { // root node is null
             root = new TreeNode(x);
-            return root;
         } else if (x.compareTo(root.getValue()) > 0) { // x is greater than root
             if (root.getRight() == null) {
                 root.setRight(new TreeNode(x));
-                return root;
             } else {
                 addHelper(root.getRight(), x);
             }
-        } else if (x.compareTo(root.getValue()) < 0) { // x is less than rot
+        } else { // x is less than root
             if (root.getLeft() == null) {
                 root.setLeft(new TreeNode(x));
-                return root;
             } else {
                 addHelper(root.getLeft(), x);
             }
         }
 
-        return root;   
+        return root;
     }
     
 
