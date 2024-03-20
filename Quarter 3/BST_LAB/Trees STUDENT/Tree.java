@@ -228,8 +228,7 @@ public class Tree {
      * @param root is the root of a tree (or subtree for recursive calls). 
      */ 
     private void inOrderHelper2(TreeNode root) {
-        if(root!=null)
-        {
+        if(root!=null) {
             inOrderHelper2(root.getLeft());
             temp += (root.getValue() + ", "); 
             inOrderHelper2(root.getRight());
