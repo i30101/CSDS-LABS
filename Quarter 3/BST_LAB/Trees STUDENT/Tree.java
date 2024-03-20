@@ -27,7 +27,26 @@ public class Tree {
      */    
     private TreeNode addHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD****************************        
-        
+        // root node is null
+        if (myRoot == null) {
+            root = new TreeNode(x);
+            return root;
+        } else if (x.compareTo(root.getValue()) > 0) { // x is greater than root
+            if (root.getRight() == null) {
+                root.setRight(new TreeNode(x));
+                return root;
+            } else {
+                addHelper(root.getRight(), x);
+            }
+        } else if (x.compareTo(root.getValue()) < 0) { // x is less than rot
+            if (root.getLeft() == null) {
+                root.setLeft(new TreeNode(x));
+                return root;
+            } else {
+                addHelper(root.getLeft(), x);
+            }
+        }
+
         return root;   
     }
     
@@ -79,8 +98,7 @@ public class Tree {
      * @param root is the root of a tree (or subtree for recursive calls).  
      */   
     private void inOrderHelper(TreeNode root) {
-        if(root!=null)
-        {
+        if(root!=null) {
             inOrderHelper(root.getLeft());
             System.out.print(root.getValue() + " ");    
             inOrderHelper(root.getRight());
@@ -145,7 +163,7 @@ public class Tree {
      */ 
     private boolean isLeaf(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************  
-        return false;     //temporary return statement to keep things compiling
+        return root.getLeft() == null && root.getRight() == null;
     }
 
 
@@ -155,7 +173,7 @@ public class Tree {
      */
     private boolean oneKid(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************
-        return false;     //temporary return statement to keep things compiling
+        return (root.getLeft() == null) != (root.getRight() == null);
     }
     
 
