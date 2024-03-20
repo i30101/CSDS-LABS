@@ -33,15 +33,15 @@ public class Utilities {
 
                     // set row range
                     int minRow = (r == 0) ? 0 : r - 1;
-                    int maxRow = (r == rows) ? rows : r + 1; 
+                    int maxRow = (r == rows - 1) ? rows - 1 : r + 1; 
 
                     // set column range
                     int minCol = (c == 0) ? 0 : c - 1;
-                    int maxCol = (c == cols) ? cols : c + 1;
+                    int maxCol = (c == cols - 1) ? cols - 1 : c + 1;
 
                     // traverse through neighbors within ranges above
-                    for (int nRow = minRow; nRow < maxRow; nRow++) {
-                        for (int nCol = minCol; nCol < maxCol; nCol++) {
+                    for (int nRow = minRow; nRow <= maxRow; nRow++) {
+                        for (int nCol = minCol; nCol <= maxCol; nCol++) {
                             if (gameBoard[nRow][nCol].getNumAnts() == GamePanel.ANTHILL) {
                                 count++;
                             }
@@ -59,11 +59,30 @@ public class Utilities {
     public static void revealEmpties(Button [][] gameBoard, int row, int col) {
         //*****COMPLETE THIS METHOD*****/
         //terminating cases go here
-        
+        if (row < 0 || row >= gameBoard.length) {
+            return;
+        } else if (col < 0 || col >= gameBoard[0].length) {
+            return;
+        } else if (gameBoard[row][col].hasBeenClicked()) {
+            return;
+        }
+
         gameBoard[row][col].setClicked(true);
         revealAdjacentSpaces(gameBoard, row, col);   //now reveal any adjacent space next to a 0-ant space
         
         //recursive calls go here
+        revealEmpties(gameBoard, row - 1, col - 1);
+        revealEmpties(gameBoard, row - 1, col);
+        revealEmpties(gameBoard, row - 1, col + 1);
+
+        revealEmpties(gameBoard, row, col - 1);
+        revealEmpties(gameBoard, row, col);
+        revealEmpties(gameBoard, row, col + 1);
+
+        revealEmpties(gameBoard, row + 1, col - 1);
+        revealEmpties(gameBoard, row + 1, col);
+        revealEmpties(gameBoard, row + 1, col + 1);
+        
     }
 
     //pre:  gameBoard!=null, row>=0, col>=0, row<gameBoard.length, col<gameBoard[0].length
