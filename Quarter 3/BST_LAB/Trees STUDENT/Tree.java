@@ -79,6 +79,12 @@ public class Tree {
      */   
     private void preOrderHelper(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************
+        if (root == null) {
+            return;
+        }
+        System.out.print(root.getValue() + " ");
+        preOrderHelper(root.getLeft());
+        preOrderHelper(root.getRight());
     }
     
 
@@ -115,6 +121,13 @@ public class Tree {
      */   
     private void postOrderHelper(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************  
+        if (root != null) {
+            postOrderHelper(root.getLeft());
+            postOrderHelper(root.getRight());
+            System.out.print(root.getValue() + " ");
+        } else {
+            return;
+        }
     }
     
 
@@ -188,7 +201,12 @@ public class Tree {
      */    
     private int sizeHelper(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************  
-        return 0;     //temporary return statement to keep things compiling
+        if (root == null) {
+            return 0;
+        } else {
+            return 1 + sizeHelper(root.getLeft()) + sizeHelper(root.getRight());
+        }
+        // return 0;     //temporary return statement to keep things compiling
     }
 
 
@@ -209,7 +227,12 @@ public class Tree {
      */   
     public int heightHelper(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************
-        return 0;     //temporary return statement to keep things compiling
+        if (root == null) {
+            return -1;
+        } else {
+            return 1 + Math.max(heightHelper(root.getLeft()), heightHelper(root.getRight()));
+        }
+        // return 0;     //temporary return statement to keep things compiling
     }
     
 
