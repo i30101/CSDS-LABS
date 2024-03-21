@@ -71,17 +71,6 @@ public class Utilities {
         revealAdjacentSpaces(gameBoard, row, col);   //now reveal any adjacent space next to a 0-ant space
         
         // //recursive calls go here
-        // revealEmpties(gameBoard, row - 1, col - 1);
-        // revealEmpties(gameBoard, row - 1, col);
-        // revealEmpties(gameBoard, row - 1, col + 1);
-
-        // revealEmpties(gameBoard, row, col - 1);
-        // revealEmpties(gameBoard, row, col);
-        // revealEmpties(gameBoard, row, col + 1);
-
-        // revealEmpties(gameBoard, row + 1, col - 1);
-        // revealEmpties(gameBoard, row + 1, col);
-        // revealEmpties(gameBoard, row + 1, col + 1);
 
         for (int r = row - 1; r <= row + 1; r++) {
             for (int c = col - 1; c <= col + 1; c++) {
