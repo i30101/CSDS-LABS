@@ -61,26 +61,46 @@ public class Tree {
      * @return the root of the ordered binary search tree after x has been removed.
      */   
     private TreeNode removeHelper(TreeNode root, Comparable x) {
-        //************COMPLETE THIS METHOD*****************************      
-        if (root == null) {
-            return null;
-        } else if (isLeaf(root)) {
-            TreeNode parent = searchParent(root, x);
-
+        //************COMPLETE THIS METHOD*****************************
+        TreeNode delete = searchHelper(root, x);
+        System.out.println("delete: " + delete);
+        System.out.println("left node of delete: " + delete.getLeft());
+        System.out.println("right node of delete: " + delete.getRight());
+        TreeNode parent = searchParent(root, x);
+        System.out.println("parent: " + parent);
+        if (delete == null || !contains(x)) {
+            return root;
+        } else if (isLeaf(delete)) {
             if (parent == null) {
-                myRoot = null;
-                return myRoot;
-            } else if (parent.getLeft().equals(root)) {
+                root = null;
+            } else if (parent.getLeft() == delete) {
                 parent.setLeft(null);
-            } else if (parent.getRight().equals(root)) {
+            } else if (parent.getRight() == delete) {
                 parent.setRight(null);
             }
-        } else if (oneKid(root)) {
-
+        } else if (oneKid(delete)) {
+            if (delete == parent.getLeft() && delete.getLeft() != null) {
+                parent.setLeft(delete.getLeft());
+            } else if (delete == parent.getLeft() && delete.getRight() != null) {
+                parent.setLeft(delete.getRight());
+            } else if (delete == parent.getRight() && delete.getLeft() != null) {
+                parent.setRight(delete.getLeft());
+            } else {
+                parent.setRight(delete.getRight());
+            }
         } else {
-
+            TreeNode m = delete.getLeft();
+            while (!isLeaf(m)) {
+                m = m.getRight();
+            }
+            // Comparable temp = m.getValue();
+            // removeHelper(root.getRight(), temp);
+            m.setLeft(delete.getLeft());
+            m.setRight(delete.getRight());
+            TreeNode mParent = searchParent(root, m.getValue());
+            mParent.setRight(null);
         }
-        return root;    
+        return root;
     }
     
 
@@ -166,13 +186,16 @@ public class Tree {
      */   
     private TreeNode searchHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
+        System.out.println("searching for " + x);
         if (root == null) {
             return null;
-        } else if (root.getValue() == x) {
+        } else if (root.getValue().equals(x)) {
             return root;
-        } else if (root.getValue().compareTo(x) < 0) {
+        } else if (root.getValue().compareTo(x) > 0) {
+            System.out.println("searching left");
             return searchHelper(root.getLeft(), x);
         } else {
+            System.out.println("searching right");
             return searchHelper(root.getRight(), x);
         }
     }
@@ -186,16 +209,24 @@ public class Tree {
      */    
     private TreeNode searchParent(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
+        System.out.println("parent searching for " + x);
+        
         if (root == null) {
             return null;
-        } else if (root.getLeft().equals(x) || root.getRight().equals(x)) {
+        } else if ((root.getLeft() != null && root.getLeft().getValue().equals(x)) || (root.getRight() != null && root.getRight().getValue().equals(x))) {
             return root;
-        } else if (root.getValue().compareTo(x) < 0) {
-            searchParent(root.getLeft(), x);
+        // } else if (root.getValue().compareTo(x) > 0) {
+            // return searchParent(root.getLeft(), x);
         } else {
-            searchParent(root.getRight(), x);
+            // return searchParent(root.getRight(), x);
+                    // Recursively search in the left and right subtrees
+        TreeNode leftParent = searchParent(root.getLeft(), x);
+        TreeNode rightParent = searchParent(root.getRight(), x);
+
+        // If found in left subtree, return left parent, else return right parent
+        return (leftParent != null) ? leftParent : rightParent;
         }
-        return null;     //temporary return statement to keep things compiling
+        // return null;     //temporary return statement to keep things compiling
     }
     
 
@@ -205,6 +236,9 @@ public class Tree {
      */ 
     private boolean isLeaf(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************  
+        if (root == null) {
+            return false;
+        }
         return root.getLeft() == null && root.getRight() == null;
     }
 
@@ -215,6 +249,9 @@ public class Tree {
      */
     private boolean oneKid(TreeNode root) {
         //************COMPLETE THIS METHOD*****************************
+        if (root == null) {
+            return false;
+        }
         return (root.getLeft() == null) != (root.getRight() == null);
     }
     

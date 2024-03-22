@@ -31,8 +31,11 @@ public class TreeDriver2 {
         extraInfo(t);           //should be: There are 8 nodes, the tree is of height 3
         System.out.println();
         t.remove("Y");
+        System.out.println(t);
         t.remove("A");
+        System.out.println(t);
         t.remove("R");
+        System.out.println(t);
         t.remove("Z"); //yes, we will try to remove what is not there
         t.showPreOrder();       //should be: D B S W T
         t.showInOrder();        //should be: B D S T W
