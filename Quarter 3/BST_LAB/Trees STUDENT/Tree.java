@@ -63,11 +63,7 @@ public class Tree {
     private TreeNode removeHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
         TreeNode delete = searchHelper(root, x);
-        System.out.println("delete: " + delete);
-        System.out.println("left node of delete: " + delete.getLeft());
-        System.out.println("right node of delete: " + delete.getRight());
         TreeNode parent = searchParent(root, x);
-        System.out.println("parent: " + parent);
         if (delete == null || !contains(x)) {
             return root;
         } else if (isLeaf(delete)) {
@@ -93,12 +89,11 @@ public class Tree {
             while (!isLeaf(m)) {
                 m = m.getRight();
             }
-            // Comparable temp = m.getValue();
-            // removeHelper(root.getRight(), temp);
             m.setLeft(delete.getLeft());
             m.setRight(delete.getRight());
             TreeNode mParent = searchParent(root, m.getValue());
             mParent.setRight(null);
+            root = m;
         }
         return root;
     }
@@ -184,18 +179,15 @@ public class Tree {
      * @param x a non-null Comparable Object.
      * @return a pointer to the TreeNode that contains the value x; returns null if not found
      */   
-    private TreeNode searchHelper(TreeNode root, Comparable x) {
+    public TreeNode searchHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
-        System.out.println("searching for " + x);
         if (root == null) {
             return null;
         } else if (root.getValue().equals(x)) {
             return root;
         } else if (root.getValue().compareTo(x) > 0) {
-            System.out.println("searching left");
             return searchHelper(root.getLeft(), x);
         } else {
-            System.out.println("searching right");
             return searchHelper(root.getRight(), x);
         }
     }
@@ -208,25 +200,17 @@ public class Tree {
      * @return a pointer to the parent of the node that contains the value x; returns null if not found
      */    
     private TreeNode searchParent(TreeNode root, Comparable x) {
-        //************COMPLETE THIS METHOD*****************************
-        System.out.println("parent searching for " + x);
-        
+        //************COMPLETE THIS METHOD*****************************      
         if (root == null) {
             return null;
         } else if ((root.getLeft() != null && root.getLeft().getValue().equals(x)) || (root.getRight() != null && root.getRight().getValue().equals(x))) {
             return root;
-        // } else if (root.getValue().compareTo(x) > 0) {
-            // return searchParent(root.getLeft(), x);
         } else {
-            // return searchParent(root.getRight(), x);
-                    // Recursively search in the left and right subtrees
-        TreeNode leftParent = searchParent(root.getLeft(), x);
-        TreeNode rightParent = searchParent(root.getRight(), x);
+            TreeNode leftParent = searchParent(root.getLeft(), x);
+            TreeNode rightParent = searchParent(root.getRight(), x);
 
-        // If found in left subtree, return left parent, else return right parent
-        return (leftParent != null) ? leftParent : rightParent;
+            return (leftParent != null) ? leftParent : rightParent;
         }
-        // return null;     //temporary return statement to keep things compiling
     }
     
 

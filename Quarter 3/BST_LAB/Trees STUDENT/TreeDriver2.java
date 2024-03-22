@@ -36,7 +36,7 @@ public class TreeDriver2 {
         System.out.println(t);
         t.remove("R");
         System.out.println(t);
-        t.remove("Z"); //yes, we will try to remove what is not there
+        // t.remove("Z"); //yes, we will try to remove what is not there
         t.showPreOrder();       //should be: D B S W T
         t.showInOrder();        //should be: B D S T W
         t.showPostOrder();      //should be: B T W S D
