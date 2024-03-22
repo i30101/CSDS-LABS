@@ -61,7 +61,25 @@ public class Tree {
      * @return the root of the ordered binary search tree after x has been removed.
      */   
     private TreeNode removeHelper(TreeNode root, Comparable x) {
-        //************COMPLETE THIS METHOD*****************************         
+        //************COMPLETE THIS METHOD*****************************      
+        if (root == null) {
+            return null;
+        } else if (isLeaf(root)) {
+            TreeNode parent = searchParent(root, x);
+
+            if (parent == null) {
+                myRoot = null;
+                return myRoot;
+            } else if (parent.getLeft().equals(root)) {
+                parent.setLeft(null);
+            } else if (parent.getRight().equals(root)) {
+                parent.setRight(null);
+            }
+        } else if (oneKid(root)) {
+
+        } else {
+
+        }
         return root;    
     }
     
@@ -136,9 +154,7 @@ public class Tree {
      * @return  true if x is found; false if x is not found in the tree
      */    
     public boolean contains(Comparable x) {
-        if (searchHelper(myRoot, x)==null)
-            return false;
-        return true;
+        return searchHelper(myRoot, x) != null;
     }
 
 
@@ -150,7 +166,15 @@ public class Tree {
      */   
     private TreeNode searchHelper(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
-        return null;     //temporary return statement to keep things compiling
+        if (root == null) {
+            return null;
+        } else if (root.getValue() == x) {
+            return root;
+        } else if (root.getValue().compareTo(x) < 0) {
+            return searchHelper(root.getLeft(), x);
+        } else {
+            return searchHelper(root.getRight(), x);
+        }
     }
     
 
@@ -162,6 +186,15 @@ public class Tree {
      */    
     private TreeNode searchParent(TreeNode root, Comparable x) {
         //************COMPLETE THIS METHOD*****************************
+        if (root == null) {
+            return null;
+        } else if (root.getLeft().equals(x) || root.getRight().equals(x)) {
+            return root;
+        } else if (root.getValue().compareTo(x) < 0) {
+            searchParent(root.getLeft(), x);
+        } else {
+            searchParent(root.getRight(), x);
+        }
         return null;     //temporary return statement to keep things compiling
     }
     
