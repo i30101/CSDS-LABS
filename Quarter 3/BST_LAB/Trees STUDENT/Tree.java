@@ -260,7 +260,6 @@ public class Tree {
         } else {
             return 1 + sizeHelper(root.getLeft()) + sizeHelper(root.getRight());
         }
-        // return 0;     //temporary return statement to keep things compiling
     }
 
 
