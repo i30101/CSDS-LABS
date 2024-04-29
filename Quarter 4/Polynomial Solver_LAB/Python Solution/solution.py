@@ -41,6 +41,7 @@ class Polynomial:
         self.coefficients = c
         self.degree = len(c) - 1
         self.name = self.get_name()
+        self.y_values = self.f(X)
 
 
     # returns string with name of polynomial in standard form
@@ -51,7 +52,7 @@ class Polynomial:
                 if i != 0:
                     n += " + "
                 if coefficient != 1:
-                    n += coefficient
+                    n += str(coefficient)
                 n += f"x^{self.degree - i}"
         return n
     
@@ -62,16 +63,20 @@ class Polynomial:
             value += (coefficient) * (x ** (self.degree - i))
         return value
     
+    # returns whether x-value is root or not
+    def is_root(self, x):
+        return self.f(x) == 0
+    
     # plots graph of function 
     def plot(self):
-        y_values = self.f(X)
-        plt.plot(X, y_values, label=self.name)
+        plt.plot(X, self.y_values, label=self.name)
 
         
 
 
 
-x_squared = Polynomial([1, 0, 0])
+x_squared = Polynomial([1, 2, 0, 3, 4])
+print(x_squared.y_values)
 x_squared.plot()
 
 
