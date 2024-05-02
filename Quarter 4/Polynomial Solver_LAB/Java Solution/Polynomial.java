@@ -1,7 +1,18 @@
+/**
+ * @version 2.0.0, 2 May 2024
+ * @author Andrew Kim
+ * 
+ * Polynomial object for polynomial solver
+ */
+
 import java.util.*;
 
 class Polynomial {
+    // the coefficients of the polynomial
     private int[] coefficients;
+
+    // the degree of the polynomial
+    // 1 less than the number of coefficients
     private int degree;
 
     /**
@@ -12,6 +23,7 @@ class Polynomial {
         coefficients = coeffs;
         degree = coefficients.length - 1;
     }
+
 
     /**
      * Returns y-value of function given x-value input
@@ -26,6 +38,9 @@ class Polynomial {
         return value;
     }
 
+
+    /* ************************ HELPER METHODS ************************ */
+
     /**
      * Returns whether a number is a root or not
      * @param x number to check
@@ -35,21 +50,58 @@ class Polynomial {
         return f(x) == 0;
     }
 
+
+
     /**
-     * Sees if two numbers have the same sign
-     * @param a the first number
-     * @param b the second number
-     * @return whether both have the same sign or not
+     * Finds the indeces where there must be a root between that and the next
+     * @param xRange the range of x-values
+     * @return 
      */
-    private boolean sameSigns(double a, double b) {
-        return (a > 0) == (b > 0);
+    private int[] findRootIndeces(double[] xRange) {
+        ArrayList<Integer> indexList = new ArrayList<Integer>();
+        for (int i = 0; i < xRange.length - 1; i++) {
+            if (!PolHelper.sameSigns(f(xRange[i]), xRange[i + 1])) {
+                indexList.add(i);
+            }
+        }
+        int[] indeces = new int[indexList.size()];
+        for (int i = 0; i < indexList.size(); i++) {
+            indeces[i] = indexList.get(i);
+        }
+        return indeces;
     }
 
-    private int[] findRootIndeces(double[] xRange) {
-        ArrayList<Integer> indeces = new ArrayList<Integer>();
-        for (int i = 0; i < xRange.length - 1; i++) {
-            
+
+    /**
+     * Finds zeroes of the polynomial
+     * @param almostZero desired tolerance for calculating the zero
+     * @param xRange range of x-values to consider
+     * @return list of zeroes
+     * @throws Exception error with bisection
+     */
+    public double[] findZeroes(double almostZero, double[] xRange) throws Exception {
+        ArrayList<Double> zeroList = new ArrayList<Double>();
+        int[] rootIndeces = findRootIndeces(xRange);
+        for (int i = 0; i < rootIndeces.length; i++) {
+            double lower = xRange[i];
+            double upper = xRange[i + 1];
+            double mid = PolHelper.average(lower, upper);
+            while (Math.abs(upper - lower) > almostZero) {
+                if (PolHelper.sameSigns(f(lower), f(mid))) {
+                    lower = mid;
+                } else if (PolHelper.sameSigns(f(mid), f(upper))) {
+                    upper = mid;
+                } else {
+                    throw new Exception("Bisection error");
+                }
+                mid = PolHelper.average(lower, upper);
+            }
+            zeroList.add(mid);
         }
-        return null;
+        double[] zeroes = new double[zeroList.size()];
+        for (int i = 0; i < zeroList.size(); i++) {
+            zeroes[i] = zeroList.get(i);
+        }
+        return zeroes;
     }
 }
