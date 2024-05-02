@@ -10,13 +10,13 @@ public class PolDriver {
     public static final double almostZero = 0.0000000001;
     
     // minimum of considered values
-    public static final double min = -1000000;
+    public static final double min = -100;
     
     // maximum of considered values
-    public static final double max = 1000000;
+    public static final double max = 100;
     
     // number of divions in x range
-    public static final int resolution = 1000000;
+    public static final int resolution = 100;
     
     public static void main(String[] args) {
         double[] xRange = new double[resolution];
@@ -25,6 +25,9 @@ public class PolDriver {
             xRange[i] = min + xTemp;
             xTemp += (max - min) / resolution;
         }
-        System.out.println(xRange);
+        double[] coefficients = {1, 2, -5, 3, 4, -3, 4, -8};
+        Polynomial pol = new Polynomial(coefficients);
+        System.out.print("Zeroes of polynomial: ");
+        PolHelper.printDoubleArray(pol.findZeroes(almostZero, xRange));
     }
 }

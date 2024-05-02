@@ -9,7 +9,7 @@ import java.util.*;
 
 class Polynomial {
     // the coefficients of the polynomial
-    private int[] coefficients;
+    private double[] coefficients;
 
     // the degree of the polynomial
     // 1 less than the number of coefficients
@@ -19,7 +19,7 @@ class Polynomial {
      * Creates a new polynomial object
      * @param coeffs coefficients in the order of decreasing powers
      */
-    public Polynomial(int[] coeffs) {
+    public Polynomial(double[] coeffs) {
         coefficients = coeffs;
         degree = coefficients.length - 1;
     }
@@ -60,7 +60,7 @@ class Polynomial {
     private int[] findRootIndeces(double[] xRange) {
         ArrayList<Integer> indexList = new ArrayList<Integer>();
         for (int i = 0; i < xRange.length - 1; i++) {
-            if (!PolHelper.sameSigns(f(xRange[i]), xRange[i + 1])) {
+            if (!PolHelper.sameSigns(f(xRange[i]), f(xRange[i + 1]))) {
                 indexList.add(i);
             }
         }
@@ -77,14 +77,13 @@ class Polynomial {
      * @param almostZero desired tolerance for calculating the zero
      * @param xRange range of x-values to consider
      * @return list of zeroes
-     * @throws Exception error with bisection
      */
-    public double[] findZeroes(double almostZero, double[] xRange) throws Exception {
+    public double[] findZeroes(double almostZero, double[] xRange) {
         ArrayList<Double> zeroList = new ArrayList<Double>();
         int[] rootIndeces = findRootIndeces(xRange);
         for (int i = 0; i < rootIndeces.length; i++) {
-            double lower = xRange[i];
-            double upper = xRange[i + 1];
+            double lower = xRange[rootIndeces[i]];
+            double upper = xRange[rootIndeces[i] + 1];
             double mid = PolHelper.average(lower, upper);
             while (Math.abs(upper - lower) > almostZero) {
                 if (PolHelper.sameSigns(f(lower), f(mid))) {
@@ -92,7 +91,7 @@ class Polynomial {
                 } else if (PolHelper.sameSigns(f(mid), f(upper))) {
                     upper = mid;
                 } else {
-                    throw new Exception("Bisection error");
+                    System.out.println("Bisection error");
                 }
                 mid = PolHelper.average(lower, upper);
             }

@@ -16,7 +16,23 @@ public class PolHelper {
         return (a > 0) == (b > 0);
     }
 
+    /**
+     * Calculates the average of two numbers
+     * @param a first double
+     * @param b second double
+     * @return their average
+     */
     public static double average(double a, double b) {
         return (a + b) / 2;
+    }
+
+    public static void printDoubleArray(double[] doubleArray) {
+        for (int i = 0; i < doubleArray.length; i++) {
+            System.out.print(doubleArray[i]);
+            if (i < doubleArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 }
