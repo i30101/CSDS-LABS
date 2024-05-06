@@ -9,13 +9,13 @@
 public class BlackBox {
     public static char[][] board;
 
-    private static final int size = 12;
-    private static final int numMirrors = 10;
+    private static final int SIZE = 12;
+    private static final int NUM_MIRRORS = 10;
 
-    private static final String space = " ";
-    private static final String empty = ".";
-    private static final char rightMirror = '/';
-    private static final char leftMirror = '\\';
+    private static final String SPACE = " ";
+    private static final String EMPTY = ".";
+    private static final char RIGHT_MIRROR = '/';
+    private static final char LEFT_MIRROR = '\\';
 
 
     /**
@@ -24,7 +24,7 @@ public class BlackBox {
      * @return single random coordinate value
      */
     private static int randomCoord() {
-        return 1 + (int) (Math.random() * (size - 2));
+        return 1 + (int) (Math.random() * (SIZE - 2));
     }
 
 
@@ -34,7 +34,7 @@ public class BlackBox {
      * @return whether the character is a mirror or not
      */
     private static boolean isMirror(char c) {
-        return (c == rightMirror) || (c == leftMirror);
+        return (c == RIGHT_MIRROR) || (c == LEFT_MIRROR);
     }
 
     private static void moveUp(int x, int y) {
@@ -62,25 +62,25 @@ public class BlackBox {
      */
     public static void initializeBoard() {
         // create 2D array for board
-        board = new char[size][size];
+        board = new char[SIZE][SIZE];
 
         // iterate through board
-        for (int i = 0; i < size - 2; i++) {
+        for (int i = 0; i < SIZE - 2; i++) {
             // place top laser
             board[0][i + 1] = (char) ('a' + i);
 
             // place bottom laser
-            board[size - 1][i + 1] = (char) ('A' + i);
+            board[SIZE - 1][i + 1] = (char) ('A' + i);
 
             // place left laser
             board[i + 1][0] = (char) ('k' + i);
 
             // place right laser
-            board[i + 1][size - 1] = (char) ('K' + i);
+            board[i + 1][SIZE - 1] = (char) ('K' + i);
         }
 
         // assign mirrors
-        for (int i = 0; i < numMirrors; i++) {
+        for (int i = 0; i < NUM_MIRRORS; i++) {
             int randX;
             int randY;
 
@@ -91,7 +91,7 @@ public class BlackBox {
             } while (board[randX][randY] != 0);
 
             // randomly decide which way the mirror is pointed and place on board
-            board[randX][randY] = (Math.random() > 0.5) ? leftMirror : rightMirror; 
+            board[randX][randY] = (Math.random() > 0.5) ? LEFT_MIRROR : RIGHT_MIRROR; 
         }
     }
 
@@ -106,9 +106,9 @@ public class BlackBox {
                 if (c != 0 && (showMirrors || !isMirror(c))) {
                     System.out.print(String.valueOf(c));
                 } else {
-                    System.out.print(empty);
+                    System.out.print(EMPTY);
                 }
-                System.out.print(space);
+                System.out.print(SPACE);
             }
             System.out.println();
         }
