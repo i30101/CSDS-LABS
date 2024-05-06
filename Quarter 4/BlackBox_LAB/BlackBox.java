@@ -14,6 +14,8 @@ public class BlackBox {
 
     private static final String space = " ";
     private static final String empty = ".";
+    private static final char rightMirror = '/';
+    private static final char leftMirror = '\\';
 
 
     /**
@@ -21,9 +23,36 @@ public class BlackBox {
      * Will not give coordinate value of a laser
      * @return single random coordinate value
      */
-    public static int randomCoord() {
+    private static int randomCoord() {
         return 1 + (int) (Math.random() * (size - 2));
     }
+
+
+    /**
+     * Sees if a square is a mirror
+     * @param c the character
+     * @return whether the character is a mirror or not
+     */
+    private static boolean isMirror(char c) {
+        return (c == rightMirror) || (c == leftMirror);
+    }
+
+    private static void moveUp(int x, int y) {
+
+    }
+
+    private static void moveDown(int x, int y) {
+
+    }
+
+    private static void moveLeft(int x, int y) {
+
+    }
+
+    private static void moveRight(int x, int y) {
+        
+    }
+
 
     /**
      * Initializes Black Box board
@@ -61,21 +90,23 @@ public class BlackBox {
                 randY = randomCoord();
             } while (board[randX][randY] != 0);
 
-            // randomly decide which way the mirror is pointed
-            // and place in board
-            board[randX][randY] = (Math.random() > 0.5) ? '/' : '\\'; 
+            // randomly decide which way the mirror is pointed and place on board
+            board[randX][randY] = (Math.random() > 0.5) ? leftMirror : rightMirror; 
         }
-
     }
 
 
+    /**
+     * Shows board in terminal
+     * @param showMirrors whether mirrors should be printed or not
+     */
     public static void printBoard(boolean showMirrors) {
         for (char[] row : board) {
             for (char c : row) {
-                if (c == 0) {
-                    System.out.print(empty);
-                } else {
+                if (c != 0 && (showMirrors || !isMirror(c))) {
                     System.out.print(String.valueOf(c));
+                } else {
+                    System.out.print(empty);
                 }
                 System.out.print(space);
             }
