@@ -16,10 +16,10 @@ public class Board {
     private int numMirrors;
 
     // characters for printing board
-    public static final String SPACE = " ";
-    public static final char EMPTY = '.';
-    public static final char RIGHT_MIRROR = '/';
-    public static final char LEFT_MIRROR = '\\';
+    private static final String SPACE = " ";
+    private static final char EMPTY = '.';
+    private static final char RIGHT_MIRROR = '/';
+    private static final char LEFT_MIRROR = '\\';
 
     // coordinates of mirrors that should be shown
     private ArrayList<Integer> visibleRowCoords = new ArrayList<Integer>();
