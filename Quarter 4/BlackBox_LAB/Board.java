@@ -9,11 +9,11 @@
  import java.util.*;
 
 public class Board {
-    public static char[][] board;
+    private char[][] board;
 
     // board parameters
-    private static final int SIZE = 12;
-    private static final int NUM_MIRRORS = 10;
+    private int size;
+    private int numMirrors;
 
     // characters for printing board
     public static final String SPACE = " ";
@@ -22,17 +22,36 @@ public class Board {
     public static final char LEFT_MIRROR = '\\';
 
     // coordinates of mirrors that should be shown
-    private static ArrayList<Integer> visibleRowCoords = new ArrayList<Integer>();
-    private static ArrayList<Integer> visibleColCoords = new ArrayList<Integer>();
+    private ArrayList<Integer> visibleRowCoords = new ArrayList<Integer>();
+    private ArrayList<Integer> visibleColCoords = new ArrayList<Integer>();
 
+
+    /**
+     * Creates custom Board
+     * @param s the size of the board (s by s)
+     * @param n the number of mirrors
+     */
+    public Board(int s, int n) {
+        size = s;
+        numMirrors = n;
+        initializeBoard();
+    }
+
+
+    /*
+     * Default constructor for Board object
+     */
+    public Board() {
+        this(12, 10);
+    }
 
     /**
      * Generates random coordinate within size limits
      * Will not give coordinate value of a laser
      * @return single random coordinate value
      */
-    private static int randomCoord() {
-        return 1 + (int) (Math.random() * (SIZE - 2));
+    private int randomCoord() {
+        return 1 + (int) (Math.random() * (size - 2));
     }
 
 
@@ -42,25 +61,23 @@ public class Board {
      * @param y y-coordinate in question
      * @return whether the point in question is a mirror or not
      */
-    private static boolean isMirror(int x, int y) {
+    public boolean isMirror(int x, int y) {
         return board[x][y] == RIGHT_MIRROR || board[x][y] == LEFT_MIRROR;
     }
 
 
     /**
      * Reords that the author has found a mirror
-     * @param x x-coordinate of mirror that was found
-     * @param y y-coordinate of mirror that was found
+     * @param row x-coordinate of mirror that was found
+     * @param col y-coordinate of mirror that was found
      * @return whether the mirror 
      */
-    private static boolean foundMirror(int x, int y) {
-        if (wasFound(x, y)) {
-            return false;
-        }
+    public void foundMirror(int row, int col) {
         // store coordinates of visible mirrors
-        visibleRowCoords.add(x);
-        visibleColCoords.add(y);
-        return true;
+        if (!wasFound(row, col)) {
+            visibleRowCoords.add(row);
+            visibleColCoords.add(col);
+        }
     }
 
     
@@ -70,7 +87,7 @@ public class Board {
      * @param col y-coordinate of mirror
      * @return whether the mirror has been found
      */
-    private static boolean wasFound(int row, int col) {
+    private boolean wasFound(int row, int col) {
         return visibleRowCoords.contains(row) && visibleColCoords.contains(col);
     }
 
@@ -81,7 +98,7 @@ public class Board {
      * @param startCol remains the same
      * @return eventual target of the laser
      */
-    private static char moveUp(int startRow, int startCol) {
+    public char moveUp(int startRow, int startCol) {
         for (int r = startRow - 1; r > 0; r--) {
             if (board[r][startCol] == RIGHT_MIRROR) {
                 return moveRight(r, startCol);
@@ -99,15 +116,15 @@ public class Board {
      * @param startCol remains the same
      * @return eventual target of the laser
      */
-    private static char moveDown(int startRow, int startCol) {
-        for (int r = startRow + 1; r < SIZE - 1; r++) {
+    public char moveDown(int startRow, int startCol) {
+        for (int r = startRow + 1; r < size - 1; r++) {
             if (board[r][startCol] == RIGHT_MIRROR) {
                 return moveLeft(r, startCol);
             } else if (board[r][startCol] == LEFT_MIRROR) {
                 return moveRight(r, startCol);
             }
         }
-        return board[SIZE - 1][startCol];
+        return board[size - 1][startCol];
     }
 
 
@@ -117,7 +134,7 @@ public class Board {
      * @param startCol column where traversal starts
      * @return eventual target of the laser
      */
-    private static char moveLeft(int startRow, int startCol) {
+    public char moveLeft(int startRow, int startCol) {
         for (int c = startCol - 1; c > 0; c--) {
             if (board[startRow][c] == RIGHT_MIRROR) {
                 return moveDown(startRow, c);
@@ -135,15 +152,15 @@ public class Board {
      * @param startCol column where traversal starts
      * @return eventual target of the laser
      */
-    private static char moveRight(int startRow, int startCol) {
-        for (int c = startCol + 1; c < SIZE - 1; c++) {
+    public char moveRight(int startRow, int startCol) {
+        for (int c = startCol + 1; c < size - 1; c++) {
             if (board[startRow][c] == RIGHT_MIRROR) {
                 return moveUp(startRow, c);
             } else if (board[startRow][c] == LEFT_MIRROR) {
                 return moveDown(startRow, c);
             }
         }
-        return board[startRow][SIZE - 1];
+        return board[startRow][size - 1];
     }
 
 
@@ -153,27 +170,27 @@ public class Board {
      * Leaves blanks spaces null
      * Adds mirrors as slashes or backslashes
      */
-    public static void initializeBoard() {
+    private void initializeBoard() {
         // create 2D array for board
-        board = new char[SIZE][SIZE];
+        board = new char[size][size];
 
         // iterate through board
-        for (int i = 0; i < SIZE - 2; i++) {
+        for (int i = 0; i < size - 2; i++) {
             // place top laser
             board[0][i + 1] = (char) ('a' + i);
 
             // place bottom laser
-            board[SIZE - 1][i + 1] = (char) ('A' + i);
+            board[size - 1][i + 1] = (char) ('A' + i);
 
             // place left laser
             board[i + 1][0] = (char) ('k' + i);
 
             // place right laser
-            board[i + 1][SIZE - 1] = (char) ('K' + i);
+            board[i + 1][size - 1] = (char) ('K' + i);
         }
 
         // assign mirrors
-        for (int i = 0; i < NUM_MIRRORS; i++) {
+        for (int i = 0; i < numMirrors; i++) {
             int randRow;
             int randCol;
 
@@ -194,7 +211,7 @@ public class Board {
      * @param showMirrors whether mirrors should be printed or not
      * If showMirrors is false, boards that were found are still printed
      */
-    public static void printBoard(boolean showMirrors) {
+    public void print(boolean showMirrors) {
         for (int r = 0; r < board.length; r++) {
             for (int c = 0; c < board[0].length; c++) {
                 if (board[r][c] != 0 && (showMirrors || !isMirror(r, c) || wasFound(r, c))) {
@@ -211,22 +228,12 @@ public class Board {
 
 
     /**
-     * Clears terminal
+     * Gets character at desired coordinates
+     * @param row desired row
+     * @param col desired column
+     * @return the character at row, col
      */
-    private static void clear() {
-        System.out.print("\033\143");
-    }
-
-
-    public static void main(String[] args) {
-        clear();
-        System.out.println("\\**************** Welcome to BLACK BOX! ****************/\n");
-        initializeBoard();
-        // printBoard(false);
-        printBoard(true);
-        for (int col = 1; col < SIZE - 1; col++) {
-            System.out.println("firing from: " + board[SIZE - 1][col]);
-            System.out.println("hit laser: " + moveUp(SIZE - 1, col));
-        }
+    public char get(int row, int col) {
+        return board[row][col];
     }
 }
