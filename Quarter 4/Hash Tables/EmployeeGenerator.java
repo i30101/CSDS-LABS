@@ -6,7 +6,6 @@
  * Generates employee numbers with random names
  */
 
-import java.util.*;
 import java.io.*;
 
 public class EmployeeGenerator {
@@ -14,7 +13,7 @@ public class EmployeeGenerator {
     private static String[] VOWELS = "aeiou".split("");
     private static String[] CONSONANTS = "bcdfghjklmnpqrstvwxyz".split("");
 
-    private static String WRITE_PATH = "./data/hashData.txt";
+    public static String FILEPATH = "./data/hashData.txt";
 
     private static String randomLetter(String[] letters) {
         return letters[(int) (Math.random() * letters.length)];
@@ -29,13 +28,13 @@ public class EmployeeGenerator {
     }
 
     private static String randomName() {
-        String name = randomConsonant();
+        String name = "";
 
-        for (int i = 0; i < ( (int) (Math.random() * 7) + 2); i++) {
+        for (int i = 0; i < ( (int) (Math.random() * 6) + 3); i++) {
             if (i % 2 == 0) {
-                name += randomVowel();
-            } else {
                 name += randomConsonant();
+            } else {
+                name += randomVowel();
             }
         }
         return name;
@@ -50,7 +49,7 @@ public class EmployeeGenerator {
         }
 
         try {
-            FileWriter writer = new FileWriter(WRITE_PATH);
+            FileWriter writer = new FileWriter(FILEPATH);
             
             // trunate file before writing
             writer.flush();
@@ -60,5 +59,6 @@ public class EmployeeGenerator {
         } catch (IOException e) {
             System.out.println("Error writing file");
         }
+        System.out.println("Random employee generation complete");
     }
 }
