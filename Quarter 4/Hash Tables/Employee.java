@@ -1,5 +1,7 @@
 /**
  * @author Andrew Kim
+ * @since 2 June 2024
+ * @version 1.0.0
  */
 
 public class Employee {
@@ -39,5 +41,14 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public boolean equals(Employee e) {
+        return (name.equals(e.getName())) && (number == e.getNumber());
+    }
+
+    @Override
+    public String toString() {
+        return number + " " + name;
     }
 }
